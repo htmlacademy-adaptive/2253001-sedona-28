@@ -1,0 +1,16 @@
+.contacts {
+  &__title {
+    @include font-bold;
+  }
+
+  &__label {
+    @include font-normal;
+  }
+
+  &__input {
+    width: 100%;
+    height: 60px;
+    background: #f2f2f2;
+    border: none;
+  }
+}

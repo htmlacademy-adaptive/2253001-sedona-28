@@ -1,0 +1,6 @@
+.page-footer {
+  &__visit {
+    @include font-bold;
+    font-size: 21px;
+  }
+}

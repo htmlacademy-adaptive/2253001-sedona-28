@@ -1,0 +1,25 @@
+.photo-list {
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+  }
+
+  &__author {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  &__like {
+    border: none;
+  }
+
+  &__like-counter {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+  }
+}

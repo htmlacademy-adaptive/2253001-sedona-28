@@ -1,0 +1,14 @@
+.form {
+  &__button {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    background: #81b3d2;
+    border: none;
+  }
+}

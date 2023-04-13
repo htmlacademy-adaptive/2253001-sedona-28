@@ -1,0 +1,12 @@
+.textarea {
+  &__title {
+    @include font-bold;
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    background: #f2f2f2;
+  }
+}

@@ -3,3 +3,19 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin font-bold {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@mixin font-normal {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+}

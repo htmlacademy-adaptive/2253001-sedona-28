@@ -1,0 +1,13 @@
+.rate {
+  &__title {
+    @include font-bold;
+  }
+
+  &__label {
+    display: flex;
+    align-items: flex-start;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}

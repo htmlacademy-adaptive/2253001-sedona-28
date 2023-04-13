@@ -1,32 +1,28 @@
 // BASE Style
-@import './base/fonts.scss';
-@import './base/base.scss';
+@import "./base/fonts.scss";
+@import "./base/base.scss";
 
 //MIXINS
-@import './mixins.scss';
+@import "./mixins.scss";
 
 //BLOCKS
-@import './blocks/page-header.scss';
-@import './blocks/menu-list.scss';
-@import './blocks/page-nav.scss';
-@import './blocks/page-main.scss';
-@import './blocks/advantages.scss';
-@import './blocks/copyright.scss';
-@import './blocks/page.footer.scss';
-@import './blocks/social.scss';
-@import './blocks/find-hotel.scss';
-@import './blocks/catalog-content.scss';
-@import './blocks/photo-list.scss';
-@import './blocks/page-form.scss';
-@import './blocks/form.scss';
-@import './blocks/user-date.scss';
-@import './blocks/contacts.scss';
-@import './blocks/rate.scss';
-@import './blocks/visit.scss';
-@import './blocks/textarea.scss';
-
-
-
-
-
-
+// @import "./blocks/page__body.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/menu-list.scss";
+// @import "./blocks/page-nav.scss";
+// @import "./blocks/page-main.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/page.footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/find-hotel.scss";
+@import "./blocks/catalog-content.scss";
+@import "./blocks/photo-list.scss";
+@import "./blocks/page-form.scss";
+@import "./blocks/form.scss";
+@import "./blocks/user-date.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/rate.scss";
+@import "./blocks/visit.scss";
+@import "./blocks/textarea.scss";
+@import "./blocks/attractions.scss";

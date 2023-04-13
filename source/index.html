@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -23,16 +24,16 @@
         <div class="page-nav__wrapper">
           <ul class="page-nav__list menu-list">
             <li class="menu-list__item">
-              <a href="#">Главная</a>
+              <a class="menu-list__link" href="#">Главная</a>
             </li>
             <li class="menu-list__item">
-              <a href="#">Фото и видео</a>
+              <a class="menu-list__link" href="#">Фото и видео</a>
             </li>
             <li class="menu-list__item">
-              <a href="#">Форма Отзыва</a>
+              <a class="menu-list__link" href="#">Форма Отзыва</a>
             </li>
             <li class="menu-list__item">
-              <a href="#">HTML Academy</a>
+              <a class="menu-list__link" href="#">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -48,97 +49,107 @@
           height="214"
           alt="текст логотипа"
         />
+        <img
+          src="./img/canyon.jpg"
+          width="320"
+          height="332"
+          alt="фото каньон"
+        />
       </section>
       <section class="advantages">
         <div class="advantages__wrapper list">
           <h2 class="advantages__slogan">
-            Седона-небольшой городок в Аризоне, заслуживающий большего!
+            Седона-небольшой<br />
+            городок в Аризоне, заслуживающий большего!
           </h2>
           <p class="advantages-compare">
             Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
           </p>
           <ul class="advantages__list">
             <li class="advantages__item advantages__item-city">
-              <h2 class="advantages__title">НАСТОЯЩИЙ ГОРОДОК</h2>
+              <h3 class="advantages__title">НАСТОЯЩИЙ ГОРОДОК</h3>
               <p class="advantages__number">— №1 —</p>
               <p class="advantages__description">
                 Седона не аттракцион для туристов, там течет своя жизнь
               </p>
               <img
                 src="./img/photo-city.png"
-                width="520"
+                width="320"
                 height="260"
                 alt="photo-city"
               />
+              <ul class="advantages__menu attractions">
+                <li class="attractions__item attractions__item-house">
+                  <h4 class="attractions__title">Жилье</h4>
+                  <p class="attractions__description">
+                    Рекомендуем пожить в настоящем мотеле, все как в кино!
+                  </p>
+                  <img
+                    class="attractions__icon-house"
+                    src="./img/icon-house.svg"
+                    width="39"
+                    height="37"
+                    alt="Жилье"
+                  />
+                </li>
+                <li class="attractions__item attractions__item-burger">
+                  <h4 class="attractions__title">Еда</h4>
+                  <p class="attractions__description">
+                    Всегда заказывайте фирменный Бургер, Вы не разочаруетесь!
+                  </p>
+                  <img
+                    class="attractions__icon-burger"
+                    src="./img/icon-burger.svg"
+                    width="33"
+                    height="26"
+                    alt="Еда"
+                  />
+                </li>
+                <li class="attractions__item attractions__item-gift">
+                  <h4 class="attractions__title">Сувениры</h4>
+                  <p class="attractions__description">
+                    Не только китайского, но и местного производства!
+                    <img
+                      class="attractions__icon-gift"
+                      src="./img/icon-gift.svg"
+                      width="32"
+                      height="38"
+                      alt="Сувениры"
+                    />
+                  </p>
+                </li>
+              </ul>
             </li>
-            <li class="advantages__item advantages__item-house">
-              <h2 class="advantages__title">Жилье</h2>
-              <p class="advantages__description">
-                Рекомендуем пожить в настоящем мотеле, все как в кино!
-              </p>
-              <img
-                class="icon-house"
-                src="./img/icon-house.svg"
-                width="39"
-                height="37"
-                alt="Жилье"
-              />
-            </li>
-            <li class="advantages__item advantages__item-burger">
-              <h2 class="advantages__title">Еда</h2>
-              <p class="advantages__description">
-                Всегда заказывайте фирменный Бургер, Вы не разочаруетесь!
-              </p>
-              <img
-                class="icon-burger"
-                src="./img/icon-burger.svg"
-                width="33"
-                height="26"
-                alt="Еда"
-              />
-            </li>
-            <li class="advantages__item advantages__item-gift">
-              <h2 class="advantages__title">Сувениры</h2>
-              <p class="advantages__description">
-                Не только китайского, но и местного производства!
-                <img
-                  class="icon-gift"
-                  src="./img/icon-gift.svg"
-                  width="32"
-                  height="38"
-                  alt="Сувениры"
-                />
-              </p>
-            </li>
+
             <li class="advantages__item advantages__item-bridge">
-              <h2 class="advantages__title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h2>
+              <h3 class="advantages__title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
               <p class="advantages__number">— №2 —</p>
               <p class="advantages__description">
                 Да, по нему можно пройти! Если вы осмелитесь, конечно
               </p>
               <img
                 src="./img/photo-bridge.png"
-                width="520"
+                width="320"
                 height="260"
                 alt="photo-bridge"
               />
             </li>
             <li class="advantages__item advantages__item-territory">
-              <h2 class="advantages__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+              <h3 class="advantages__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
               <p class="advantages__number">— №3 —</p>
               <p class="advantages__description">
                 Все интересные места находятся очень близко
               </p>
             </li>
             <li class="advantages__item advantages__item-road">
-              <h2 class="advantages__title">КРАСИВАЯ ДОРОГА</h2>
+              <h3 class="advantages__title">КРАСИВАЯ ДОРОГА</h3>
               <p class="advantages__number">— №4 —</p>
               <p class="advantages__description">
                 Ехать в Седону из Лас-Вегаса совсем не скучно!
               </p>
             </li>
             <li class="advantages__item advantages__item-tourists">
-              <h2 class="advantages__title">МАЛО ТУРИСТОВ</h2>
+              <h3 class="advantages__title">МАЛО ТУРИСТОВ</h3>
               <p class="advantages__number">— №5 —</p>
               <p class="advantages__description">
                 Большинство едет в гранд каньони толпится там
@@ -148,10 +159,11 @@
         </div>
       </section>
       <section class="find-hotel">
-        <h2 class="find-hotel__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+        <h3 class="find-hotel__title">ЗАИНТЕРЕСОВАЛИСЬ?</h3>
         <p class="find-hotel__description">
-          Укажите предполагаемые датыпоездки, и мы покажем вам лучшиепредложения
-          гостиниц в седоне
+          Укажите предполагаемые даты <br />
+          поездки, и мы покажем вам лучшие <br />
+          предложения гостиниц в седоне
         </p>
         <button class="find-hotel__find" type="button">Найти Гостиницу</button>
         <img class="find-hotel__map" src="./img/map-mobile.jpg" alt="карта" />

@@ -1,0 +1,10 @@
+.page-form {
+  &__title {
+    @include font-bold;
+  }
+
+  &__description {
+    @include font-normal;
+    color: #333333;
+  }
+}

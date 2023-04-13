@@ -1,0 +1,15 @@
+.advantages {
+  &__list {
+    @include list-reset;
+  }
+
+  &__slogan,
+  &__title {
+    @include font-bold;
+  }
+
+  &__number,
+  &__description {
+    @include font-normal;
+  }
+}

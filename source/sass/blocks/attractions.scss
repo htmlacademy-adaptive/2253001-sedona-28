@@ -1,0 +1,23 @@
+.attractions {
+  @include list-reset;
+
+  &__title {
+    @include font-bold;
+    text-align: left;
+  }
+
+  &__icon-house {
+    width: 39px;
+    height: 37px;
+  }
+
+  &__icon-burger {
+    width: 33px;
+    height: 26px;
+  }
+
+  &__icon-gift {
+    width: 32px;
+    height: 38px;
+  }
+}

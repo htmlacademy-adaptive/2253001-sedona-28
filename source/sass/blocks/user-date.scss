@@ -1,0 +1,25 @@
+.user-date {
+  &__title {
+    @include font-bold;
+  }
+
+  &__label {
+    @include font-normal;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__input {
+    width: 100%;
+    height: 58px;
+    background: #f2f2f2;
+    border: none;
+  }
+
+  &__input::placeholder {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}

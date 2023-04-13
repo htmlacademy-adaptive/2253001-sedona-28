@@ -1,0 +1,14 @@
+.catalog-content {
+  &__name {
+    @include font-bold;
+    font-size: 21px;
+  }
+
+  &__description {
+    @include font-normal;
+  }
+
+  &__list {
+    @include list-reset;
+  }
+}
