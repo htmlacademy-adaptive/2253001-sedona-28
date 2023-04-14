@@ -1,13 +1,12 @@
 .menu-list {
   @include list-reset;
 }
-  .menu-list__item {
-    @include font-bold;
-  }
+.menu-list__item {
+  @include font-bold;
+}
 
-  .menu-list__link {
-    background: #81b3d2;
-    text-decoration: none;
-    color: #ffffff;
-  }
-
+.menu-list__link {
+  background: #81b3d2;
+  text-decoration: none;
+  color: #ffffff;
+}
