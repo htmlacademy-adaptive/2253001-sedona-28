@@ -1,14 +1,11 @@
-.catalog-content {
-  &__name {
-    @include font-bold;
-    font-size: 21px;
-  }
+.catalog-content__name {
+  @include font-bold;
+}
 
-  &__description {
-    @include font-normal;
-  }
+.catalog-content__description {
+  @include font-normal;
+}
 
-  &__list {
-    @include list-reset;
-  }
+.catalog-content__list {
+  @include list-reset;
 }

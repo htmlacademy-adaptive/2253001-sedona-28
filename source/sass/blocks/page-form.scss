@@ -1,10 +1,8 @@
-.page-form {
-  &__title {
-    @include font-bold;
-  }
+.page-form__title {
+  @include font-bold;
+}
 
-  &__description {
-    @include font-normal;
-    color: #333333;
-  }
+.page-form__description {
+  @include font-normal;
+  color: #333333;
 }
