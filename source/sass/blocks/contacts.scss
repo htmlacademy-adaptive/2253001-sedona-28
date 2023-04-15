@@ -1,0 +1,14 @@
+.contacts__title {
+  @include font-bold;
+}
+
+.contacts__label {
+  @include font-normal;
+}
+
+.contacts__input {
+  width: 100%;
+  height: 60px;
+  background: #f2f2f2;
+  border: none;
+}

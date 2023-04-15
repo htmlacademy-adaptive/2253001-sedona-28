@@ -1,0 +1,12 @@
+.find-hotel__title {
+  @include font-bold;
+}
+
+.find-hotel__description {
+  @include font-normal;
+}
+
+.find-hotel__marker {
+  width: 27px;
+  height: 27px;
+}

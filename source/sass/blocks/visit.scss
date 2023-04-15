@@ -1,0 +1,11 @@
+.visit__title {
+  @include font-bold;
+}
+
+.visit__label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  display: flex;
+  align-items: flex-start;
+}

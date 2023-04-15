@@ -1,0 +1,8 @@
+.page-form__title {
+  @include font-bold;
+}
+
+.page-form__description {
+  @include font-normal;
+  color: #333333;
+}

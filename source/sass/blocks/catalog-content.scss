@@ -1,0 +1,11 @@
+.catalog-content__name {
+  @include font-bold;
+}
+
+.catalog-content__description {
+  @include font-normal;
+}
+
+.catalog-content__list {
+  @include list-reset;
+}

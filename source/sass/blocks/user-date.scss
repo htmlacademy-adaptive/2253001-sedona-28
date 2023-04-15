@@ -1,0 +1,23 @@
+.user-date__title {
+  @include font-bold;
+}
+
+.user-date__label {
+  @include font-normal;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.user-date__input {
+  width: 100%;
+  height: 58px;
+  background: #f2f2f2;
+  border: none;
+}
+
+.user-date__input::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}

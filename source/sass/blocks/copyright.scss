@@ -1,0 +1,8 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+}
+
+.copyright__text {
+  @include font-normal;
+}
