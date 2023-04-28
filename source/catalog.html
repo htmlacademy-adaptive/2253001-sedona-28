@@ -43,8 +43,13 @@
     <main class="catalog-content">
       <section class="catalog-content__cover">
         <h1 class="visually-hidden">SEDONA</h1>
-        <img src="./img/text-sedona.svg" alt="SEDONA" />
         <img
+          class="catalog-content__text"
+          src="./img/text-sedona.svg"
+          alt="SEDONA"
+        />
+        <img
+          class="catalog-content__image"
           src="./img/canyon.jpg"
           width="320"
           height="332"
@@ -58,7 +63,7 @@
           забыть о политике и экономике.
         </p>
         <ul class="catalog-content__list photo-list">
-          <li class="photo-list__item">
+          <li class="photo-list__item photo-list__item--large">
             <img
               class="photo-list__photo-1"
               src="./img/photo-1.png"
@@ -66,18 +71,24 @@
               height="280"
               alt="Неродные просторы"
             />
-            <h3 class="photo-list__title">Неродные просторы</h3>
-            <p class="photo-list__author">Автор фото: Борис</p>
-            <button class="photo-list__like" type="button">
-              <img
-                class="like-icon"
-                width="23"
-                height="21"
-                src="./img/like-icon.svg"
-                alt="like"
-              />
-            </button>
-            <span class="photo-list__like-counter">1350</span>
+            <div class="photo-list__description">
+              <div class="photo-list__text">
+                <h3 class="photo-list__title">Неродные просторы</h3>
+                <p class="photo-list__author">Автор фото: Борис</p>
+              </div>
+              <div class="photo-list__like-icon">
+                <button class="photo-list__like" type="button">
+                  <img
+                    class="like-icon"
+                    width="23"
+                    height="21"
+                    src="./img/like-icon.svg"
+                    alt="like"
+                  />
+                </button>
+                <span class="photo-list__like-counter">1350</span>
+              </div>
+            </div>
           </li>
           <li class="photo-list__item">
             <img
@@ -87,18 +98,24 @@
               height="280"
               alt="Местная растительность"
             />
-            <h3 class="photo-list__title">Местная растительность</h3>
-            <p class="photo-list__author">Автор фото: Сергей</p>
-            <button class="photo-list__like" type="button">
-              <img
-                class="like-icon"
-                width="23"
-                height="21"
-                src="./img/like-icon.svg"
-                alt="like"
-              />
-            </button>
-            <span class="photo-list__like-counter">143</span>
+            <div class="photo-list__description">
+              <div class="photo-list__text">
+                <h3 class="photo-list__title">Местная растительность</h3>
+                <p class="photo-list__author">Автор фото: Сергей</p>
+              </div>
+              <div class="photo-list__like-icon">
+                <button class="photo-list__like" type="button">
+                  <img
+                    class="like-icon"
+                    width="23"
+                    height="21"
+                    src="./img/like-icon.svg"
+                    alt="like"
+                  />
+                </button>
+                <span class="photo-list__like-counter">143</span>
+              </div>
+            </div>
           </li>
           <li class="photo-list__item">
             <img
@@ -108,18 +125,24 @@
               height="280"
               alt="Дорога на север"
             />
-            <h3 class="photo-list__title">Дорога на север</h3>
-            <p class="photo-list__author">Автор фото: Петр</p>
-            <button class="photo-list__like" type="button">
-              <img
-                class="like-icon"
-                width="23"
-                height="21"
-                src="./img/like-icon.svg"
-                alt="like"
-              />
-            </button>
-            <span class="photo-list__like-counter">96</span>
+            <div class="photo-list__description">
+              <div class="photo-list__text">
+                <h3 class="photo-list__title">Дорога на север</h3>
+                <p class="photo-list__author">Автор фото: Петр</p>
+              </div>
+              <div class="photo-list__like-icon">
+                <button class="photo-list__like" type="button">
+                  <img
+                    class="like-icon"
+                    width="23"
+                    height="21"
+                    src="./img/like-icon.svg"
+                    alt="like"
+                  />
+                </button>
+                <span class="photo-list__like-counter">96</span>
+              </div>
+            </div>
           </li>
           <li class="photo-list__item">
             <img
@@ -129,18 +152,24 @@
               height="280"
               alt="Мост дьявола"
             />
-            <h3 class="photo-list__title">Мост дьявола</h3>
-            <p class="photo-list__author">Автор фото: Антон</p>
-            <button class="photo-list__like" type="button">
-              <img
-                class="like-icon"
-                width="23"
-                height="21"
-                src="./img/like-icon.svg"
-                alt="like"
-              />
-            </button>
-            <span class="photo-list__like-counter">254</span>
+            <div class="photo-list__description">
+              <div class="photo-list__text">
+                <h3 class="photo-list__title">Мост дьявола</h3>
+                <p class="photo-list__author">Автор фото: Антон</p>
+              </div>
+              <div class="photo-list__like-icon">
+                <button class="photo-list__like" type="button">
+                  <img
+                    class="like-icon"
+                    width="23"
+                    height="21"
+                    src="./img/like-icon.svg"
+                    alt="like"
+                  />
+                </button>
+                <span class="photo-list__like-counter">254</span>
+              </div>
+            </div>
           </li>
         </ul>
       </section>

@@ -1,3 +1,31 @@
+.photo-list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.photo-list__item--large {
+  @media (min-width: $tablet-width) {
+    grid-column: span 2;
+  }
+  @media (min-width: $desktop-width) {
+    grid-column: span 3;
+  }
+}
+
+.photo-list__description {
+  @media (min-width: $tablet-width) {
+    background: #eaeaea;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .photo-list__title {
   font-weight: 700;
   font-size: 14px;

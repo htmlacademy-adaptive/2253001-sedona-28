@@ -2,22 +2,43 @@
   @include list-reset;
 }
 
+.attractions__item {
+  display: flex;
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.attractions__text-wrapper {
+  margin-left: 10px;
+  @media (min-width: $tablet-width) {
+    justify-content: center;
+  }
+}
+
 .attractions__title {
   @include font-bold;
   text-align: left;
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
 }
 
 .attractions__icon-house {
   width: 39px;
   height: 37px;
+  margin-top: 20px;
 }
 
 .attractions__icon-burger {
   width: 33px;
   height: 26px;
+  margin-top: 20px;
 }
 
 .attractions__icon-gift {
   width: 32px;
   height: 38px;
+  margin-top: 20px;
 }

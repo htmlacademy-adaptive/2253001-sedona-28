@@ -1,3 +1,9 @@
+.user-date {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    padding-right: 30px;
+  }
+}
 .user-date__title {
   @include font-bold;
 }

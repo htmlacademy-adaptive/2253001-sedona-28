@@ -10,3 +10,17 @@
   width: 27px;
   height: 27px;
 }
+
+.find-hotel__find {
+  display: block;
+  margin: 0 auto;
+  background: #81b3d2;
+  color: #ffffff;
+  width: 284px;
+  height: 58px;
+  border: none;
+  @include font-bold;
+  @media (min-width: $tablet-width) {
+    width: 458px;
+  }
+}
