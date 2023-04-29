@@ -1,12 +1,25 @@
 .menu-list {
   @include list-reset;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
+
 .menu-list__item {
   @include font-bold;
+  background: #81b3d2;
+  @media (min-width: $tablet-width) {
+    background: #ffffff;
+  }
 }
 
 .menu-list__link {
-  background: #81b3d2;
   text-decoration: none;
   color: #ffffff;
+  @media (min-width: $tablet-width) {
+    color: #000000;
+  }
 }

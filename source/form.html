@@ -56,89 +56,95 @@
         посещенных вами достопримечательностях
       </p>
       <form class="form">
-        <div class="form__user-date user-date">
-          <h3 class="user-date__title">Представьтесь:</h3>
-          <label class="user-date__label"
-            >ИМЯ*:
-            <input
-              class="user-date__input"
-              type="text"
-              placeholder="Пётр"
-              required
-            />
-          </label>
-          <label class="user-date__label"
-            >ФАМИЛИЯ*:
-            <input
-              class="user-date__input"
-              type="text"
-              placeholder="Пустота"
-              required
-            />
-          </label>
-          <label class="user-date__label"
-            >Отчество:
-            <input
-              class="user-date__input"
-              type="text"
-              placeholder="Викторович"
-            />
-          </label>
-        </div>
-        <div class="form__contacts contacts">
-          <h3 class="contacts__title">Контактная информация:</h3>
-          <label class="contacts__label"
-            >Контактный телефон*:
-            <input
-              class="contacts__input"
-              type="text"
-              placeholder="Введите телефон"
-              required
-            />
-          </label>
-          <label class="contacts__label"
-            >Электронная почта*:
-            <input
-              class="contacts__input"
-              type="text"
-              placeholder="Введите e-mail"
-              required
-            />
-          </label>
+        <div class="form__wrapper">
+          <div class="form__user-date user-date">
+            <h3 class="user-date__title">Представьтесь:</h3>
+            <label class="user-date__label"
+              >ИМЯ*:
+              <input
+                class="user-date__input"
+                type="text"
+                placeholder="Пётр"
+                required
+              />
+            </label>
+            <label class="user-date__label"
+              >ФАМИЛИЯ*:
+              <input
+                class="user-date__input"
+                type="text"
+                placeholder="Пустота"
+                required
+              />
+            </label>
+            <label class="user-date__label"
+              >Отчество:
+              <input
+                class="user-date__input"
+                type="text"
+                placeholder="Викторович"
+              />
+            </label>
+          </div>
+          <div class="form__contacts contacts">
+            <h3 class="contacts__title">Контактная информация:</h3>
+            <label class="contacts__label"
+              >Контактный телефон*:
+              <input
+                class="contacts__input"
+                type="text"
+                placeholder="Введите телефон"
+                required
+              />
+            </label>
+            <label class="contacts__label"
+              >Электронная почта*:
+              <input
+                class="contacts__input"
+                type="text"
+                placeholder="Введите e-mail"
+                required
+              />
+            </label>
+          </div>
         </div>
         <div class="form__rate rate">
           <h3 class="rate__title">Ваше общее впечатление:</h3>
-          <label class="rate__label">
-            <input class="rate__input" type="radio" name="rate" checked />
-            Скорее положительное
-          </label>
-          <label class="rate__label">
-            <input class="rate__input" type="radio" name="rate" />
-            Скорее отрицательное
-          </label>
-          <label class="rate__label">
-            <input class="rate__input" type="radio" name="rate" />
-            Затрудняюсь ответить
-          </label>
+          <div class="rate__label-wrapper">
+            <label class="rate__label">
+              <input class="rate__input" type="radio" name="rate" checked />
+              Скорее положительное
+            </label>
+            <label class="rate__label">
+              <input class="rate__input" type="radio" name="rate" />
+              Скорее отрицательное
+            </label>
+            <label class="rate__label">
+              <input class="rate__input" type="radio" name="rate" />
+              Затрудняюсь ответить
+            </label>
+          </div>
         </div>
         <div class="form__visit visit">
           <h3 class="visit__title">посещенные достопримечательности:</h3>
-          <label class="visit__label">
-            <input class="visit__input" type="checkbox" />
-            Мост Дьявола
-          </label>
-          <label class="visit__label">
-            <input class="visit__input" type="checkbox" />
-            Гора-Колокол
-          </label>
-          <label class="visit__label">
-            <input class="visit__input" type="checkbox" />
-            Слайд-парк
-          </label>
-          <label class="visit__label">
-            <input class="visit__input" type="checkbox" />
-            Красные скалы
-          </label>
+          <div class="visit__label-wrapper">
+            <label class="visit__label">
+              <input class="visit__input" type="checkbox" />
+              Мост Дьявола
+            </label>
+            <label class="visit__label">
+              <input class="visit__input" type="checkbox" />
+              Гора-Колокол
+            </label>
+            <label class="visit__label">
+              <input class="visit__input" type="checkbox" />
+              Слайд-парк
+            </label>
+            <label class="visit__label">
+              <input class="visit__input" type="checkbox" />
+              Красные скалы
+            </label>
+          </div>
         </div>
         <div class="form__textarea textarea">
           <h3 class="textarea__title">Опишите свои эмоции:</h3>
@@ -149,11 +155,13 @@
             cols="30"
             rows="10"
           ></textarea>
+          <div class="form__texterea-wrapper">
+          <button class="form__button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+          <p class="form__legend">
+            <small> * — обязательные поля </small>
+          </p>
+          </div>
         </div>
-        <button class="form__button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
-        <p class="form__legend">
-          <small> * — обязательные поля </small>
-        </p>
       </form>
     </main>
     <footer class="page-footer">

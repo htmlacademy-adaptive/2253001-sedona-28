@@ -1,3 +1,11 @@
+.catalog-content__text {
+  position: absolute;
+}
+
+.catalog-content__cover {
+  position: relative;
+}
+
 .catalog-content__name {
   @include font-bold;
 }
