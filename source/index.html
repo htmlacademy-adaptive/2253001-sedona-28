@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header wrapper">
       <a class="page-header__logo">
         <img
           class="page-header__logo-image"
@@ -17,11 +17,16 @@
           alt="логотип седона"
         />
       </a>
-      <nav class="page-nav">
-        <button class="page-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+      <button class="page-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+        <img src="./img/icon-menu.svg" alt="hamburger menu icon" />
+      </button>
+      <nav class="page-nav page-nav--opened">
         <div class="page-nav__wrapper">
+          <button class="page-nav__menu-close" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <img src="./img/icon-cross.svg" alt="cross menu icon" />
+          </button>
           <ul class="page-nav__list menu-list">
             <li class="menu-list__item">
               <a class="menu-list__link" href="#">Главная</a>
@@ -39,7 +44,7 @@
         </div>
       </nav>
     </header>
-    <main class="page-main">
+    <main class="page-main wrapper">
       <section class="page-cover">
         <h1 class="visually-hidden">SEDONA</h1>
         <img
@@ -76,7 +81,7 @@
                 </p>
               </div>
               <img
-                src="./img/photo-city@1x.jpg"
+                src="./img/photo-city.png"
                 alt="photo-city"
                 width="320"
                 height="260"
@@ -179,17 +184,19 @@
           предложения гостиниц в седоне
         </p>
         <button class="find-hotel__find" type="button">Найти Гостиницу</button>
-        <img class="find-hotel__map" src="./img/map-mobile.jpg" alt="карта" />
-        <img
-          class="find-hotel__marker"
-          src="./img/map-marker.png"
-          width="27"
-          height="27"
-          alt="маркер на карте"
-        />
+        <div class="find-hotel__wrapper">
+          <img class="find-hotel__map" src="./img/map-mobile.jpg" alt="карта" />
+          <img
+            class="find-hotel__marker"
+            src="./img/map-marker.png"
+            width="27"
+            height="27"
+            alt="маркер на карте"
+          />
+        </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer wrapper">
       <div class="page-footer__wrapper">
         <div class="page-footer__visit">
           <p class="page-footer__hashtag">#visitsedona</p>

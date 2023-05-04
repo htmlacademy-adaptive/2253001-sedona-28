@@ -1,9 +1,35 @@
+.page-header {
+  position: relative;
+}
+
 .page-header__logo {
+  position: relative;
+  width: auto;
+  min-height: 56px;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
 }
 
 .page-header__logo-image {
+  position: absolute;
+  z-index: 30;
   width: 185px;
   height: 96px;
+  @media (min-width: $tablet-width) {
+    z-index: 50;
+  }
+}
+
+.page-header__toggle {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 10;
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

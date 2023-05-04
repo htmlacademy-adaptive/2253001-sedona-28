@@ -1,7 +1,10 @@
 .page-cover {
   position: relative;
+  min-height: 390px;
 }
 
 .page-cover__text {
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }

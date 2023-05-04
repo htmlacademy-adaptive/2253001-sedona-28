@@ -6,9 +6,24 @@
   @include font-normal;
 }
 
+.find-hotel__wrapper {
+  position: relative;
+}
+
 .find-hotel__marker {
   width: 27px;
   height: 27px;
+  position: absolute;
+  top: 200px;
+  left: 185px;
+  @media (min-width: $tablet-width) {
+    top: 450px;
+    left: 400px;
+  }
+  @media (min-width: $desktop-width) {
+    top: 800px;
+    left: 650px;
+  }
 }
 
 .find-hotel__find {
