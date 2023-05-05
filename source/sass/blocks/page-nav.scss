@@ -1,0 +1,23 @@
+.page-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  width: auto;
+  min-height: 56px;
+  background-color: #ffffff;
+  display: none;
+
+  &--opened {
+    display: block;
+  }
+}
+
+.page-nav__menu-close {
+  position: absolute;
+  top: 17px;
+  right: 16px;
+  background-color: transparent;
+  border: none;
+}

@@ -11,6 +11,9 @@
 .menu-list__item {
   @include font-bold;
   background: #81b3d2;
+  min-height: 56px;
+  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.2);
   @media (min-width: $tablet-width) {
     background: #ffffff;
   }
