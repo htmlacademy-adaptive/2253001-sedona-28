@@ -15,9 +15,11 @@
   line-height: 26px;
   display: flex;
   align-items: flex-start;
+
   @media (min-width: $tablet-width) {
     width: 50%;
   }
+
   @media (min-width: $desktop-width) {
     width: 25%;
   }

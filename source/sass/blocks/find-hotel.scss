@@ -16,10 +16,12 @@
   position: absolute;
   top: 175px;
   left: 160px;
+
   @media (min-width: $tablet-width) {
     top: 450px;
     left: 400px;
   }
+
   @media (min-width: $desktop-width) {
     top: 800px;
     left: 650px;
@@ -34,7 +36,9 @@
   width: 284px;
   height: 58px;
   border: none;
+
   @include font-bold;
+
   @media (min-width: $tablet-width) {
     width: 458px;
   }
