@@ -49,18 +49,29 @@
         <h1 class="visually-hidden">SEDONA</h1>
         <img
           class="page-cover__text"
-          src="./img/text-welcome.png"
+          src="./img/text-welcome.svg"
           width="282"
           height="214"
           alt="текст логотипа"
         />
-        <img
-          class="page-cover__image"
-          src="./img/canyon.jpg"
-          width="320"
-          height="332"
-          alt="фото каньон"
-        />
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="img/canyon-desktop.jpg, img/canyon-desktop@2x.jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="img/canyon-tablet.jpg, img/canyon-tablet@2x.jpg"
+          />
+          <img
+            class="page-cover__image"
+            src="img/canyon-mobile.jpg"
+            srcset="img/canyon-mobile@2x.jpg"
+            width="320"
+            height="332"
+            alt="фото каньон"
+          />
+        </picture>
       </section>
       <section class="advantages">
         <div class="advantages__wrapper list">
@@ -80,13 +91,24 @@
                   Седона не аттракцион для туристов, там течет своя жизнь
                 </p>
               </div>
-              <img
-                src="./img/photo-city.png"
-                alt="photo-city"
-                width="320"
-                height="260"
-                class="advantages__city-img"
-              />
+              <picture class="advantages__city-img">
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="img/city-desktop.jpg, img/city-desktop@2x.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/city-tablet.jpg, img/city-tablet@2x.jpg"
+                />
+                <img
+                  class="advantages__city-img"
+                  src="img/city.jpg"
+                  srcset="img/city@2x.jpg"
+                  width="320"
+                  height="260"
+                  alt="photo-city"
+                />
+              </picture>
               <ul class="advantages__menu attractions">
                 <li class="attractions__item attractions__item-house">
                   <img
@@ -135,15 +157,23 @@
                 </li>
               </ul>
             </li>
-
             <li class="advantages__item advantages__item-bridge">
-              <img
-                src="./img/photo-bridge@1x.jpg"
-                width="320"
-                height="260"
-                alt="photo-bridge"
-                class="advantages__bridge-img"
-              />
+              <picture class="advantages__bridge-img">
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="img/bridge-desktop.jpg, img/bridge-desktop@2x.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/bridge-tablet.jpg, img/bridge-tablet@2x.jpg"
+                />
+                <img
+                  class="advantages__bridge-img"
+                  src="./img/bridge.jpg"
+                  srcset="img/bridge@2x.jpg"
+                  alt="photo-bridge"
+                />
+              </picture>
               <div class="advantages__item-wrapper">
                 <h3 class="advantages__title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
                 <p class="advantages__number">— №2 —</p>
@@ -185,7 +215,24 @@
         </p>
         <button class="find-hotel__find" type="button">Найти Гостиницу</button>
         <div class="find-hotel__wrapper">
-          <img class="find-hotel__map" src="./img/map-mobile.jpg" alt="карта" />
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="img/map-desktop.jpg, img/map-desktop@2x.jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="img/map-tablet.jpg, img/map-tablet@2x.jpg"
+            />
+            <img
+              class="find-hotel__map"
+              src="./img/map-mobile.jpg"
+              srcset="img/map-mobile@2x.jpg"
+              width="320"
+              height="350"
+              alt="карта"
+            />
+          </picture>
           <img
             class="find-hotel__marker"
             src="./img/map-marker.png"

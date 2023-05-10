@@ -17,11 +17,12 @@
           alt="логотип седона"
         />
       </a>
-      <nav class="page-nav">
-        <button class="page-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+      <nav class="page-nav page-nav--opened">
         <div class="page-nav__wrapper">
+          <button class="page-nav__menu-close" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <img src="./img/icon-cross.svg" alt="cross menu icon" />
+          </button>
           <ul class="page-nav__list menu-list">
             <li class="menu-list__item">
               <a class="menu-list__link" href="#">Главная</a>
@@ -42,13 +43,25 @@
     <main class="page-form">
       <section class="page-form__content">
         <h1 class="visually-hidden">SEDONA</h1>
-        <img src="./img/text-sedona.svg" alt="SEDONA" />
-        <img
-          src="./img/canyon.jpg"
-          width="320"
-          height="332"
-          alt="фото каньон"
-        />
+        <img class="page-form__text" src="./img/text-sedona.png" alt="SEDONA" />
+          <picture class="page-form__image">
+          <source
+            media="(min-width: 1200px)"
+            srcset="img/canyon2-desktop.jpg, img/canyon2-desktop@2x.jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="img/canyon2-tablet.jpg, img/canyon2-tablet@2x.jpg"
+          />
+          <img
+            class="page-form__image"
+            src="img/canyon2-mobile.jpg"
+            srcset="img/canyon2-mobile@2x.jpg"
+            width="320"
+            height="158"
+            alt="фото каньон"
+          />
+        </picture>
       </section>
       <h2 class="page-form__title">Оставьте свой отзыв</h2>
       <p class="page-form__description">

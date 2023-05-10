@@ -18,11 +18,12 @@
           alt="логотип седона"
         />
       </a>
-      <nav class="page-nav">
-        <button class="page-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+      <nav class="page-nav page-nav--opened">
         <div class="page-nav__wrapper">
+          <button class="page-nav__menu-close" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <img src="./img/icon-cross.svg" alt="cross menu icon" />
+          </button>
           <ul class="page-nav__list menu-list">
             <li class="menu-list__item">
               <a class="menu-list__link" href="#">Главная</a>
@@ -45,16 +46,29 @@
         <h1 class="visually-hidden">SEDONA</h1>
         <img
           class="catalog-content__text"
-          src="./img/text-sedona.svg"
-          alt="SEDONA"
+          src="img/text-sedona.png"
+          width="230"
+          height="40"
+          alt="sedona"
         />
-        <img
-          class="catalog-content__image"
-          src="./img/canyon.jpg"
-          width="320"
-          height="332"
-          alt="фото каньон"
-        />
+         <picture class="catalog-content__image">
+          <source
+            media="(min-width: 1200px)"
+            srcset="img/canyon2-desktop.jpg, img/canyon2-desktop@2x.jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="img/canyon2-tablet.jpg, img/canyon2-tablet@2x.jpg"
+          />
+          <img
+            class="catalog-content__image"
+            src="img/canyon2-mobile.jpg"
+            srcset="img/canyon2-mobile@2x.jpg"
+            width="320"
+            height="158"
+            alt="фото каньон"
+          />
+        </picture>
       </section>
       <section class="catalog-content__photo container">
         <h2 class="catalog-content__name">Фото и видео</h2>
@@ -64,13 +78,24 @@
         </p>
         <ul class="catalog-content__list photo-list">
           <li class="photo-list__item photo-list__item--large">
-            <img
-              class="photo-list__photo-1"
-              src="./img/photo-1.png"
-              width="280"
-              height="280"
-              alt="Неродные просторы"
-            />
+            <picture class="photo-list__sunset">
+              <source
+                media="(min-width: 1200px)"
+                srcset="img/sunset-desktop.jpg, img/sunset-desktop@2x.jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/sunset-tablet.jpg, img/sunset-tablet@2x.jpg"
+              />
+              <img
+                class="photo-list__sunset"
+                src="img/sunset-mobile.jpg"
+                srcset="img/sunset-mobile@2x.jpg"
+                width="280"
+                height="280"
+                alt="Неродные просторы"
+              />
+            </picture>
             <div class="photo-list__description">
               <div class="photo-list__text">
                 <h3 class="photo-list__title">Неродные просторы</h3>
@@ -91,13 +116,24 @@
             </div>
           </li>
           <li class="photo-list__item">
-            <img
-              class="photo-list__photo-2"
-              src="./img/photo-2.png"
-              width="280"
-              height="280"
-              alt="Местная растительность"
-            />
+            <picture class="photo-list__sunset">
+              <source
+                media="(min-width: 1200px)"
+                srcset="img/cactus-desktop.jpg, img/cactus-desktop@2x.jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/cactus-tablet.jpg, img/cactus-tablet@2x.jpg"
+              />
+              <img
+                class="photo-list__cactus"
+                src="img/cactus-mobile.jpg"
+                srcset="img/cactus-mobile@2x.jpg"
+                width="280"
+                height="280"
+                alt="Местная растительность"
+              />
+            </picture>
             <div class="photo-list__description">
               <div class="photo-list__text">
                 <h3 class="photo-list__title">Местная растительность</h3>
@@ -118,13 +154,24 @@
             </div>
           </li>
           <li class="photo-list__item">
-            <img
-              class="photo-list__photo-3"
-              src="./img/photo-3.png"
-              width="280"
-              height="280"
-              alt="Дорога на север"
-            />
+            <picture class="photo-list__forest">
+              <source
+                media="(min-width: 1200px)"
+                srcset="img/forest-desktop.jpg, img/forest-desktop@2x.jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/forest-tablet.jpg, img/forest-tablet@2x.jpg"
+              />
+              <img
+                class="photo-list__forest"
+                src="img/forest-mobile.jpg"
+                srcset="img/forest-mobile@2x.jpg"
+                width="280"
+                height="280"
+                alt="Дорога на север"
+              />
+            </picture>
             <div class="photo-list__description">
               <div class="photo-list__text">
                 <h3 class="photo-list__title">Дорога на север</h3>
@@ -145,13 +192,24 @@
             </div>
           </li>
           <li class="photo-list__item">
-            <img
-              class="photo-list__photo-4"
-              src="./img/photo-4.png"
-              width="280"
-              height="280"
-              alt="Мост дьявола"
-            />
+            <picture class="photo-list__rocks">
+              <source
+                media="(min-width: 1200px)"
+                srcset="img/rocks-desktop.jpg, img/rocks-desktop@2x.jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/rocks-tablet.jpg, img/rocks-tablet@2x.jpg"
+              />
+              <img
+                class="photo-list__rocks"
+                src="img/rocks-mobile.jpg"
+                srcset="img/rocks-mobile@2x.jpg"
+                width="280"
+                height="280"
+                alt="Мост дьявола"
+              />
+            </picture>
             <div class="photo-list__description">
               <div class="photo-list__text">
                 <h3 class="photo-list__title">Мост дьявола</h3>
@@ -179,14 +237,33 @@
           Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали
           в очередной раз!
         </p>
-        <img
-          class="video"
-          src="./img/video.png"
-          width="280"
-          height="177"
-          alt="видеопрезентация"
-        />
-        <img class="play" src="./img/play.svg" width="48" height="54" alt="" />
+        <div class="catalog-content__video-wrapper">
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="img/video-desktop.jpg, img/video-desktop@2x.jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="img/video-tablet.jpg, img/video-tablet@2x.jpg"
+            />
+            <img
+              class="video"
+              src="img/video-mobile.jpg"
+              srcset="img/video-mobile@2x.jpg"
+              width="280"
+              height="177"
+              alt="видеопрезентация"
+            />
+          </picture>
+          <img
+            class="play"
+            src="./img/play.svg"
+            width="48"
+            height="54"
+            alt=""
+          />
+        </div>
       </section>
     </main>
     <footer class="page-footer">
