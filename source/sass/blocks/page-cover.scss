@@ -4,7 +4,22 @@
 }
 
 .page-cover__text {
+  width: 280px;
+  height: 214px;
   position: absolute;
   top: 50%;
+  left: 20px;
   transform: translateY(-50%);
+
+  @media (min-width: $tablet-width) {
+    left: 156px;
+    width: 460px;
+    height: 350px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 370px;
+    width: 460px;
+    height: 350px;
+  }
 }

@@ -1,10 +1,12 @@
 .advantages__list {
   @include list-reset;
   display: grid;
+
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
 .advantages__item-wrapper {
   background: #81b3d2;
   color: #ffffff;
@@ -23,6 +25,7 @@
 
 .advantages__item-city {
   display: grid;
+
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
@@ -45,6 +48,7 @@
 
 .advantages__item-bridge {
   display: grid;
+
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
@@ -56,6 +60,7 @@
     }
   }
 }
+
 .advantages__item-territory,
 .advantages__item-road,
 .advantages__item-tourists {

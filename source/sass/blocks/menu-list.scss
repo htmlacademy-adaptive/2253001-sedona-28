@@ -2,6 +2,7 @@
   @include list-reset;
   display: flex;
   flex-direction: column;
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-around;
@@ -12,8 +13,9 @@
   @include font-bold;
   background: #81b3d2;
   min-height: 56px;
-  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2),
-    inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
   @media (min-width: $tablet-width) {
     background: #ffffff;
   }
@@ -22,6 +24,7 @@
 .menu-list__link {
   text-decoration: none;
   color: #ffffff;
+
   @media (min-width: $tablet-width) {
     color: #000000;
   }

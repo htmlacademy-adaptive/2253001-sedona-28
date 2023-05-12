@@ -6,3 +6,17 @@
   @include font-normal;
   color: #333333;
 }
+
+.page-form__text {
+  position: absolute;
+  width: 230px;
+  height: 40px;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+    height: 78px;
+  }
+}

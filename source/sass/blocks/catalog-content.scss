@@ -1,5 +1,15 @@
 .catalog-content__text {
   position: absolute;
+  width: 230px;
+  height: 40px;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+    height: 78px;
+  }
 }
 
 .catalog-content__cover {
@@ -16,4 +26,18 @@
 
 .catalog-content__list {
   @include list-reset;
+}
+
+.catalog-content__video-wrapper {
+  position: relative;
+}
+
+.play {
+  position: absolute;
+  width: 48px;
+  height: 54px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 50;
 }

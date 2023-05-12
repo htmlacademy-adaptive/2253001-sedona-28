@@ -16,6 +16,7 @@
   z-index: 30;
   width: 185px;
   height: 96px;
+
   @media (min-width: $tablet-width) {
     z-index: 50;
   }
@@ -29,6 +30,7 @@
   right: 20px;
   transform: translateY(-50%);
   z-index: 10;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
