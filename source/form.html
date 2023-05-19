@@ -46,7 +46,9 @@
         <div class="page-nav__wrapper">
           <button class="page-nav__menu-close" type="button">
             <span class="visually-hidden">Открыть меню</span>
-            <img src="./img/icon-cross.svg" alt="cross menu icon" />
+            <svg class="page-header__toggle">
+              <use xlink:href="./img/sprite.svg#icon-cross"></use>
+            </svg>
           </button>
           <ul class="page-nav__list menu-list">
             <li class="menu-list__item">
@@ -68,7 +70,9 @@
     <main class="page-form">
       <section class="page-form__content">
         <h1 class="visually-hidden">SEDONA</h1>
-        <img class="page-form__text" src="./img/text-sedona.png" alt="SEDONA" />
+        <svg class="page-form__text">
+          <use xlink:href="./img/sprite.svg#text-sedona"></use>
+        </svg>
         <picture class="page-form__image">
           <source
             media="(min-width: 1200px)"
@@ -128,21 +132,31 @@
             <h3 class="contacts__title">Контактная информация:</h3>
             <label class="contacts__label"
               >Контактный телефон*:
-              <input
-                class="contacts__input"
-                type="text"
-                placeholder="Введите телефон"
-                required
-              />
+              <div class="contacts__input-container">
+                <input
+                  class="contacts__input"
+                  type="text"
+                  placeholder="Введите телефон"
+                  required
+                />
+                <svg class="contacts-phone">
+                  <use xlink:href="./img/sprite.svg#phone"></use>
+                </svg>
+              </div>
             </label>
             <label class="contacts__label"
               >Электронная почта*:
-              <input
-                class="contacts__input"
-                type="text"
-                placeholder="Введите e-mail"
-                required
-              />
+              <div class="contacts__input-container">
+                <input
+                  class="contacts__input"
+                  type="text"
+                  placeholder="Введите e-mail"
+                  required
+                />
+                <svg class="contacts-mail">
+                  <use xlink:href="./img/sprite.svg#mail"></use>
+                </svg>
+              </div>
             </label>
           </div>
         </div>
@@ -257,12 +271,9 @@
             class="copyright__link"
             href="https://htmlacademy.ru/intensive/adaptive"
           >
-            <img
-              src="./img/logohtmlacademy.svg"
-              width="27"
-              height="35"
-              alt="HTML Academy"
-            />
+            <svg class="copyright__link-logohtmlacademy">
+              <use xlink:href="./img/sprite.svg#logohtmlacademy"></use>
+            </svg>
           </a>
         </div>
       </div>

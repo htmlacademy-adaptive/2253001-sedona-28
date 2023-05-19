@@ -44,13 +44,17 @@
       </a>
       <button class="page-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
-        <img src="./img/icon-menu.svg" alt="hamburger menu icon" />
+        <svg class="page-header__burger">
+          <use xlink:href="./img/sprite.svg#icon-menu"></use>
+        </svg>
       </button>
       <nav class="page-nav page-nav--opened">
         <div class="page-nav__wrapper">
           <button class="page-nav__menu-close" type="button">
             <span class="visually-hidden">Открыть меню</span>
-            <img src="./img/icon-cross.svg" alt="cross menu icon" />
+            <svg class="page-header__toggle">
+              <use xlink:href="./img/sprite.svg#icon-cross"></use>
+            </svg>
           </button>
           <ul class="page-nav__list menu-list">
             <li class="menu-list__item">
@@ -72,14 +76,24 @@
     <main class="page-main wrapper">
       <section class="page-cover">
         <h1 class="visually-hidden">SEDONA</h1>
-        <img
-          class="page-cover__text"
-          src="./img/text-welcome.svg"
-          width="282"
-          height="214"
-          alt="текст логотипа"
-        />
+        <svg class="page-cover__text">
+          <use xlink:href="./img/sprite.svg#text-welcome"></use>
+        </svg>
         <picture>
+          <source
+            type="image/webp"
+            media="(min-width: 1200px)"
+            srcset="img/canyon-desktop.webp, img/canyon-desktop@2x.webp"
+          />
+          <source
+            type="image/webp"
+            media="(min-width: 768px)"
+            srcset="img/canyon-tablet.webp, img/canyon-tablet@2x.webp"
+          />
+          <source
+            type="image/webp"
+            srcset="img/canyon-mobile.webp, img/canyon-mobile@2x.webp"
+          />
           <source
             media="(min-width: 1200px)"
             srcset="img/canyon-desktop.jpg, img/canyon-desktop@2x.jpg"
@@ -136,13 +150,9 @@
               </picture>
               <ul class="advantages__menu attractions">
                 <li class="attractions__item attractions__item-house">
-                  <img
-                    class="attractions__icon-house"
-                    src="./img/icon-house.svg"
-                    width="39"
-                    height="37"
-                    alt="Жилье"
-                  />
+                  <svg class="attractions__icon-house">
+                    <use xlink:href="./img/sprite.svg#icon-house"></use>
+                  </svg>
                   <div class="attractions__text-wrapper">
                     <h4 class="attractions__title">Жилье</h4>
                     <p class="attractions__description">
@@ -151,13 +161,9 @@
                   </div>
                 </li>
                 <li class="attractions__item attractions__item-burger">
-                  <img
-                    class="attractions__icon-burger"
-                    src="./img/icon-burger.svg"
-                    width="33"
-                    height="26"
-                    alt="Еда"
-                  />
+                  <svg class="attractions__icon-burger">
+                    <use xlink:href="./img/sprite.svg#icon-burger"></use>
+                  </svg>
                   <div class="attractions__text-wrapper">
                     <h4 class="attractions__title">Еда</h4>
                     <p class="attractions__description">
@@ -166,13 +172,9 @@
                   </div>
                 </li>
                 <li class="attractions__item attractions__item-gift">
-                  <img
-                    class="attractions__icon-gift"
-                    src="./img/icon-gift.svg"
-                    width="32"
-                    height="38"
-                    alt="Сувениры"
-                  />
+                  <svg class="attractions__icon-gift">
+                    <use xlink:href="./img/sprite.svg#icon-gift"></use>
+                  </svg>
                   <div class="attractions__text-wrapper">
                     <h4 class="attractions__title">Сувениры</h4>
                     <p class="attractions__description">
@@ -323,12 +325,9 @@
             class="copyright__link"
             href="https://htmlacademy.ru/intensive/adaptive"
           >
-            <img
-              src="./img/logohtmlacademy.svg"
-              width="27"
-              height="35"
-              alt="HTML Academy"
-            />
+            <svg class="copyright__link-logohtmlacademy">
+              <use xlink:href="./img/sprite.svg#logohtmlacademy"></use>
+            </svg>
           </a>
         </div>
       </div>
