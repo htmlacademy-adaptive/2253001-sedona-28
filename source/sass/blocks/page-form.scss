@@ -2,6 +2,10 @@
   @include font-bold;
 }
 
+.page-form__content {
+  position: relative;
+}
+
 .page-form__description {
   @include font-normal;
   color: #333333;
@@ -11,12 +15,44 @@
   position: absolute;
   width: 230px;
   height: 40px;
-  top: 20%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
   @media (min-width: $tablet-width) {
     width: 460px;
     height: 78px;
+  }
+}
+
+.page-form__arrow-left {
+  position: absolute;
+  top: 148px;
+  left: -129px;
+  @media (min-width: $tablet-width) {
+    width: 600px;
+    height: 57px;
+    top: 290px;
+    left: -210px;
+  }
+  @media (min-width: $desktop-width) {
+    top: 301px;
+    left: 0;
+  }
+}
+
+.page-form__arrow-right {
+  position: absolute;
+  top: 148px;
+  right: -125px;
+  @media (min-width: $tablet-width) {
+    width: 600px;
+    height: 57px;
+    top: 290px;
+    right: -210px;
+  }
+  @media (min-width: $desktop-width) {
+    top: 301px;
+    right: 0;
   }
 }

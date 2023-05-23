@@ -14,6 +14,14 @@
   }
 }
 
+.page-nav__menu-list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 200px;
+  }
+}
+
 .page-nav__menu-close {
   position: absolute;
   top: 17px;
