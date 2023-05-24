@@ -3,6 +3,36 @@
   min-height: 390px;
 }
 
+.page-cover__arrow-left {
+  position: absolute;
+  top: 300px;
+  left: -129px;
+  @media (min-width: $tablet-width) {
+    width: 600px;
+    height: 57px;
+    top: 463px;
+    left: -210px;
+  }
+  @media (min-width: $desktop-width) {
+    left: 0;
+  }
+}
+
+.page-cover__arrow-right {
+  position: absolute;
+  top: 300px;
+  right: -125px;
+  @media (min-width: $tablet-width) {
+    width: 600px;
+    height: 57px;
+    top: 463px;
+    right: -210px;
+  }
+  @media (min-width: $desktop-width) {
+    right: 0;
+  }
+}
+
 .page-cover__text {
   width: 280px;
   height: 214px;

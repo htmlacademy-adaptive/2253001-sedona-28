@@ -104,6 +104,7 @@ const watcher = () => {
 
 export default gulp.series(
   optimizeImages,
+  sprite,
   createWebP,
   html,
   styles,
@@ -111,5 +112,4 @@ export default gulp.series(
   server,
   watcher,
   copyImages,
-  sprite
 );
