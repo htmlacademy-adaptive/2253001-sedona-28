@@ -1,22 +1,120 @@
 .page-form__title {
   @include font-bold;
+  margin-top: 32px;
+  margin-bottom: 24px;
+  @media (min-width: $tablet-width) {
+    margin-top: 50px;
+    font-size: 30px;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 114px;
+    font-size: 30px;
+    margin-bottom: 31px;
+  }
+}
+
+.page-form__image {
+  max-height: 158px;
+
+  @media (min-width: $tablet-width) {
+    max-height: 298px;
+  }
+}
+
+.page-form__content {
+  position: relative;
+  min-height: 160px;
+
+  clip-path: polygon(0 0, 107% 0, 100% 81%, 50% 98%, 0 81%);
+
+  @media (min-width: $tablet-width) {
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% 84%,
+      96% 84%,
+      96% 76%,
+      50% 96%,
+      4% 77%,
+      4% 84%,
+      0% 83%
+    );
+  }
+
+  @media (min-width: $desktop-width) {
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% 81%,
+      79% 88%,
+      79% 81%,
+      50% 99%,
+      21% 81%,
+      21% 88%,
+      0% 81%
+    );
+  }
 }
 
 .page-form__description {
   @include font-normal;
   color: #333333;
+
+  @media (min-width: $tablet-width) {
+    max-width: 443px;
+    margin: 0 auto;
+  }
 }
 
 .page-form__text {
   position: absolute;
   width: 230px;
   height: 40px;
-  top: 20%;
+  top: 44%;
   left: 50%;
   transform: translate(-50%, -50%);
 
   @media (min-width: $tablet-width) {
     width: 460px;
     height: 78px;
+    top: 44%;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 47%;
+  }
+}
+
+.page-form__arrow-left {
+  position: absolute;
+  top: 148px;
+  left: -129px;
+  @media (min-width: $tablet-width) {
+    width: 600px;
+    height: 57px;
+    top: 290px;
+    left: -210px;
+  }
+  @media (min-width: $desktop-width) {
+    top: 301px;
+    left: 0;
+  }
+}
+
+.page-form__arrow-right {
+  position: absolute;
+  top: 148px;
+  right: -125px;
+  @media (min-width: $tablet-width) {
+    width: 600px;
+    height: 57px;
+    top: 290px;
+    right: -210px;
+  }
+  @media (min-width: $desktop-width) {
+    top: 301px;
+    right: 0;
   }
 }

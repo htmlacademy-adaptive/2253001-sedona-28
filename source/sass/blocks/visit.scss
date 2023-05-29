@@ -1,11 +1,42 @@
 .visit__title {
   @include font-bold;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    max-width: 280px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+}
+
+.visit__input-wrapper {
+  display: flex;
+  align-items: center;
+  max-width: 280px;
+  margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    max-width: 41%;
+    width: 100%;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 25%;
+  }
 }
 
 .visit__label-wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 146px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 44px;
+    margin-top: 59px;
   }
 }
 
@@ -13,21 +44,48 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  display: flex;
-  align-items: flex-start;
-
-  @media (min-width: $tablet-width) {
-    width: 50%;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 25%;
-  }
+  margin-bottom: 23px;
+  position: relative;
 }
 
 .visit__input {
+  appearance: none;
+  margin-top: 29px;
+}
+
+.visit__label-check {
+  margin-left: 50px;
+}
+
+.visit__mark {
+  position: absolute;
+  bottom: -13px;
+  left: 0;
   width: 46px;
   height: 46px;
-  border-radius: 4px;
-  color: #f2f2f2;
+  background-color: #f2f2f2;
+  border-radius: 3px;
+  display: flex;
+}
+
+.visit__input:hover + .visit__mark {
+  background-color: #e5e5e5;
+}
+
+.visit__input:active + .visit__mark {
+  background-color: #d5d5d5;
+}
+
+.visit__check {
+  display: none;
+}
+
+.visit__input:checked + .visit__mark > .visit__check {
+  display: inline;
+  padding-top: 11px;
+  padding-left: 10px;
+}
+
+.visit__input:checked:active + .visit__mark > .visit__check {
+  opacity: 0.3;
 }

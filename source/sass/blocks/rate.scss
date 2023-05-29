@@ -2,11 +2,47 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 94px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 49px;
+    width: 97%;
+  }
+}
+
+.rate__input-wrapper {
+  display: flex;
+  align-items: center;
+  max-width: 280px;
+  margin: 0 auto;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 44%;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 33%;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 14px;
   }
 }
 
 .rate__title {
   @include font-bold;
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 45px;
+  }
 }
 
 .rate__label {
@@ -15,18 +51,55 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-
-  @media (min-width: $tablet-width) {
-    width: 50%;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 33%;
-  }
 }
 
 .rate__input {
   width: 46px;
   height: 46px;
   border-radius: 50px;
+  margin-right: 10px;
+  appearance: none;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 16px;
+  }
+}
+
+.rate__input::before {
+  content: "";
+  display: flex;
+  background-color: #f2f2f2;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+}
+
+.rate__input:hover::before {
+  background-color: #e5e5e5;
+}
+
+.rate__input:active::before {
+  background-color: #d5d5d5;
+}
+
+.rate__input:checked:active::after {
+  background-color: rgba(51, 51, 51, 0.3);
+}
+
+.rate__input:checked::after {
+  content: "";
+  display: flex;
+  background-color: #333333;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  top: 46%;
+  left: 46%;
+  transform: translate(-50%, -50%);
 }
