@@ -31,7 +31,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    display: inline;
     background: #ffffff;
     box-shadow: none;
     font-size: 14px;
@@ -54,12 +53,6 @@
 .menu-list__item:hover > .menu-list__link {
   @media (min-width: $tablet-width) {
     color: #81b3d2;
-  }
-}
-
-.menu-list__item:active > .menu-list__link {
-  @media (min-width: $tablet-width) {
-    opacity: 0.3;
   }
 }
 
