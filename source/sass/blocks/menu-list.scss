@@ -20,14 +20,24 @@
 
   &:hover {
     background-color: #669ec0;
+    @media (min-width: $tablet-width) {
+      background-color: transparent;
+    }
   }
 
   &:active {
     background-color: #5496bd;
+    @media (min-width: $tablet-width) {
+      background-color: transparent;
+    }
   }
 
   &:active > .menu-list__link {
     color: rgba(255, 255, 255, 0.3);
+    @media (min-width: $tablet-width) {
+      color: #000000;
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $tablet-width) {
