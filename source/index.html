@@ -18,7 +18,6 @@
       sizes="16x16"
       href="/img/favicons/favicon-16x16.png"
     />
-    <link rel="manifest" href="/img/favicons/site.webmanifest" />
     <link
       rel="mask-icon"
       href="/img/favicons/safari-pinned-tab.svg"
@@ -51,25 +50,28 @@
         <div class="page-nav__wrapper">
           <button class="page-nav__menu-close" type="button">
             <span class="visually-hidden">Открыть меню</span>
-            <svg class="page-header__toggle">
-              <use xlink:href="./img/sprite.svg#icon-cross"></use>
-            </svg>
           </button>
           <div class="page-nav__menu-list">
             <ul class="page-nav__list menu-list">
-              <li class="menu-list__item">
-                <a class="menu-list__link" href="#">Главная</a>
+              <li class="menu-list__item menu-list__item--active">
+                <a class="menu-list__link" href="./index.html">Главная</a>
               </li>
               <li class="menu-list__item">
-                <a class="menu-list__link" href="#">Фото и видео</a>
+                <a class="menu-list__link" href="./catalog.html"
+                  >Фото и видео</a
+                >
               </li>
             </ul>
             <ul class="page-nav__list menu-list">
               <li class="menu-list__item">
-                <a class="menu-list__link" href="#">Форма Отзыва</a>
+                <a class="menu-list__link" href="./form.html">Форма Отзыва</a>
               </li>
               <li class="menu-list__item">
-                <a class="menu-list__link" href="#">HTML Academy</a>
+                <a
+                  class="menu-list__link"
+                  href="https://htmlacademy.ru/intensive/adaptive"
+                  >HTML Academy</a
+                >
               </li>
             </ul>
           </div>
@@ -86,20 +88,20 @@
           <source
             type="image/webp"
             media="(min-width: 1200px)"
-            srcset="img/canyon-desktop.webp, img/canyon-desktop@2x.webp" />
+            srcset="img/canyon-desktop.webp, img/canyon-desktop@2x.webp 2x" />
           <source
             type="image/webp"
             media="(min-width: 768px)"
-            srcset="img/canyon-tablet.webp, img/canyon-tablet@2x.webp" />
+            srcset="img/canyon-tablet.webp, img/canyon-tablet@2x.webp 2x" />
           <source
             type="image/webp"
-            srcset="img/canyon-mobile.webp, img/canyon-mobile@2x.webp" />
+            srcset="img/canyon-mobile.webp, img/canyon-mobile@2x.webp 2x" />
           <source
             media="(min-width: 1200px)"
-            srcset="img/canyon-desktop.jpg, img/canyon-desktop@2x.jpg" />
+            srcset="img/canyon-desktop.jpg, img/canyon-desktop@2x.jpg 2x" />
           <source
             media="(min-width: 768px)"
-            srcset="img/canyon-tablet.jpg, img/canyon-tablet@2x.jpg" />
+            srcset="img/canyon-tablet.jpg, img/canyon-tablet@2x.jpg 2x" />
           <img
             class="page-cover__image"
             src="img/canyon-mobile.jpg"
@@ -108,25 +110,23 @@
             height="332"
             alt="фото каньон"
         /></picture>
-        <svg class="page-cover__arrow-left">
-          <use xlink:href="./img/sprite.svg#arrow-left"></use>
-        </svg>
-        <svg class="page-cover__arrow-right">
-          <use xlink:href="./img/sprite.svg#arrow-right"></use>
-        </svg>
       </section>
       <section class="advantages">
         <div class="advantages__wrapper list">
           <h2 class="advantages__slogan">
-            Седона-небольшой<br />городок в Аризоне, заслуживающий большего!
+            Седона — небольшой городок в Аризоне, заслуживающий большего!
           </h2>
           <p class="advantages-compare">
             Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
           </p>
           <ul class="advantages__list">
             <li class="advantages__item advantages__item-city">
-              <div class="advantages__item-wrapper">
-                <h3 class="advantages__title">НАСТОЯЩИЙ ГОРОДОК</h3>
+              <div
+                class="advantages__item-wrapper advantages__item-wrapper--arrows"
+              >
+                <h3 class="advantages__title advantages__title--city">
+                  НАСТОЯЩИЙ ГОРОДОК
+                </h3>
                 <p class="advantages__number">— №1 —</p>
                 <p class="advantages__description">
                   Седона не аттракцион для туристов, там течет своя жизнь
@@ -135,10 +135,10 @@
               <picture class="advantages__city-img"
                 ><source
                   media="(min-width: 1200px)"
-                  srcset="img/city-desktop.jpg, img/city-desktop@2x.jpg" />
+                  srcset="img/city-desktop.jpg, img/city-desktop@2x.jpg 2x" />
                 <source
                   media="(min-width: 768px)"
-                  srcset="img/city-tablet.jpg, img/city-tablet@2x.jpg" />
+                  srcset="img/city-tablet.jpg, img/city-tablet@2x.jpg 2x" />
                 <img
                   class="advantages__city-img"
                   src="img/city.jpg"
@@ -175,8 +175,12 @@
                     <use xlink:href="./img/sprite.svg#icon-gift"></use>
                   </svg>
                   <div class="attractions__text-wrapper">
-                    <h4 class="attractions__title">Сувениры</h4>
-                    <p class="attractions__description">
+                    <h4 class="attractions__title attractions__title--gift">
+                      Сувениры
+                    </h4>
+                    <p
+                      class="attractions__description attractions__description--gift"
+                    >
                       Не только китайского, но и местного производства!
                     </p>
                   </div>
@@ -187,20 +191,29 @@
               <picture class="advantages__bridge-img"
                 ><source
                   media="(min-width: 1200px)"
-                  srcset="img/bridge-desktop.jpg, img/bridge-desktop@2x.jpg" />
+                  srcset="
+                    img/bridge-desktop.jpg,
+                    img/bridge-desktop@2x.jpg 2x
+                  " />
                 <source
                   media="(min-width: 768px)"
-                  srcset="img/bridge-tablet.jpg, img/bridge-tablet@2x.jpg" />
+                  srcset="img/bridge-tablet.jpg, img/bridge-tablet@2x.jpg 2x" />
                 <img
                   class="advantages__bridge-img"
                   src="./img/bridge.jpg"
                   srcset="img/bridge@2x.jpg"
                   alt="photo-bridge"
               /></picture>
-              <div class="advantages__item-wrapper">
-                <h3 class="advantages__title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
+              <div
+                class="advantages__item-wrapper advantages__item-wrapper--bridge"
+              >
+                <h3 class="advantages__title advantages__title--bridge">
+                  ТАМ ЕСТЬ МОСТ ДЬЯВОЛА
+                </h3>
                 <p class="advantages__number">— №2 —</p>
-                <p class="advantages__description">
+                <p
+                  class="advantages__description advantages__description--bridge"
+                >
                   Да, по нему можно пройти! Если вы осмелитесь, конечно
                 </p>
               </div>
@@ -215,7 +228,7 @@
             <li class="advantages__item advantages__item-road">
               <h3 class="advantages__title">КРАСИВАЯ ДОРОГА</h3>
               <p class="advantages__number">— №4 —</p>
-              <p class="advantages__description">
+              <p class="advantages__description advantages__description--vegas">
                 Ехать в Седону из Лас-Вегаса совсем не скучно!
               </p>
             </li>
@@ -232,26 +245,27 @@
       <section class="find-hotel">
         <h3 class="find-hotel__title">ЗАИНТЕРЕСОВАЛИСЬ?</h3>
         <p class="find-hotel__description">
-          Укажите предполагаемые даты<br />поездки, и мы покажем вам лучшие<br />предложения
-          гостиниц в седоне
+          Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+          предложения гостиниц в седоне
         </p>
         <button class="find-hotel__find" type="button">Найти Гостиницу</button>
         <div class="find-hotel__wrapper">
           <picture
             ><source
               media="(min-width: 1200px)"
-              srcset="img/map-desktop.jpg, img/map-desktop@2x.jpg" />
+              srcset="img/map-desktop.jpg, img/map-desktop@2x.jpg 2x" />
             <source
               media="(min-width: 768px)"
-              srcset="img/map-tablet.jpg, img/map-tablet@2x.jpg" />
+              srcset="img/map-tablet.jpg, img/map-tablet@2x.jpg 2x" />
             <img
               class="find-hotel__map"
               src="./img/map-mobile.jpg"
-              srcset="img/map-mobile@2x.jpg"
+              srcset="img/map-mobile@2x.jpg 2x"
               width="320"
               height="350"
-              alt="карта" /></picture
-          ><img
+              alt="карта"
+          /></picture>
+          <img
             class="find-hotel__marker"
             src="./img/map-marker.png"
             width="27"
@@ -273,26 +287,29 @@
               <a
                 class="social__link social__link--vkontakte"
                 href="https://vk.com/htmlacademy"
-                ><img src="./img/vk.png" width="24" height="24" alt="Вконтакте"
-              /></a>
+                ><svg class="social__link--vk">
+                  <use xlink:href="./img/sprite.svg#vk"></use>
+                </svg>
+              </a>
             </li>
             <li class="social__item">
               <a
                 class="social__link social__link--telegram"
                 href="https://t.me/htmlacademy"
-                ><img
-                  src="./img/telegram.png"
-                  width="24"
-                  height="24"
-                  alt="Телеграм"
-              /></a>
+                ><svg class="social__link--telegram">
+                  <use xlink:href="./img/sprite.svg#telegram"></use>
+                </svg>
+              </a>
             </li>
             <li class="social__item">
               <a
                 class="social__link social__link--youtube"
                 href="https://www.youtube.com/user/htmlacademyru"
-                ><img src="./img/youtube.png" width="24" height="24" alt="Ютуб"
-              /></a>
+              >
+                <svg class="social__link--youtube">
+                  <use xlink:href="./img/sprite.svg#youtube"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>

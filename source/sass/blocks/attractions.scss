@@ -1,5 +1,17 @@
 .attractions {
   @include list-reset;
+  max-width: 280px;
+  margin: 0 auto;
+  margin-bottom: 44px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 100%;
+    margin-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 65px;
+  }
 }
 
 .attractions__item {
@@ -12,36 +24,108 @@
 }
 
 .attractions__text-wrapper {
-  margin-left: 10px;
+  margin-left: 9px;
 
   @media (min-width: $tablet-width) {
     justify-content: center;
+    margin-left: 0;
   }
 }
 
 .attractions__title {
   @include font-bold;
   text-align: left;
+  margin-top: 28px;
+  margin-bottom: -2px;
 
   @media (min-width: $tablet-width) {
     text-align: center;
+    margin-top: 25px;
+    font-size: 21px;
+  }
+}
+
+.attractions__title--gift {
+  @media (min-width: $tablet-width) {
+    margin-top: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 23px;
+  }
+}
+
+.attractions__description {
+  margin-bottom: 6px;
+  margin-top: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 43px;
+    margin-right: 52px;
+    margin-top: 24px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 25px;
+    margin-right: 60px;
+    margin-left: 58px;
+  }
+}
+
+.attractions__description--gift {
+  @media (min-width: $desktop-width) {
+    margin-right: 102px;
+    margin-left: 116px;
   }
 }
 
 .attractions__icon-house {
-  width: 39px;
+  width: 64px;
   height: 37px;
   margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 94px;
+    height: 78px;
+    margin-top: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 66px;
+  }
 }
 
 .attractions__icon-burger {
-  width: 33px;
-  height: 26px;
-  margin-top: 20px;
+  width: 72px;
+  height: 36px;
+  margin-top: 23px;
+
+  @media (min-width: $tablet-width) {
+    width: 79px;
+    height: 77px;
+    margin-top: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 67px;
+  }
 }
 
 .attractions__icon-gift {
-  width: 32px;
+  width: 53px;
   height: 38px;
   margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 65px;
+    height: 81px;
+    margin-top: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 76px;
+    height: 78px;
+    margin-top: 69px;
+  }
 }

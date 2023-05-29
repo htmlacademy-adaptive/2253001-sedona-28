@@ -24,6 +24,15 @@
 
 .page-header__burger {
   width: 24px;
+  height: 22px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-header__toggle {
@@ -33,7 +42,7 @@
   border: none;
   position: absolute;
   top: 50%;
-  right: 10px;
+  right: 26px;
   transform: translateY(-50%);
   z-index: 10;
 

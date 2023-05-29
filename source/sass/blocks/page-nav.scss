@@ -9,6 +9,10 @@
   background-color: #ffffff;
   display: none;
 
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
   &--opened {
     display: block;
   }
@@ -18,7 +22,11 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 200px;
+    gap: 135px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 228px;
   }
 }
 

@@ -1,19 +1,28 @@
 .user-date {
   @media (min-width: $tablet-width) {
     width: 50%;
-    padding-right: 30px;
+    padding-left: 9px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-left: 0px;
   }
 }
 
 .user-date__title {
   @include font-bold;
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-top: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+  }
 }
 
 .user-date__label {
   @include font-normal;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  margin-left: 16px;
 }
 
 .user-date__input {
@@ -21,10 +30,25 @@
   height: 58px;
   background: #f2f2f2;
   border: none;
+  padding-left: 16px;
+  padding-top: 12px;
+  margin-bottom: 16px;
+  color: #000;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #fff;
+    outline: 2px solid rgba(229, 229, 229, 1);
+  }
 }
 
 .user-date__input::placeholder {
+  vertical-align: middle;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
+  color: rgba(0, 0, 0, 0.3);
 }
