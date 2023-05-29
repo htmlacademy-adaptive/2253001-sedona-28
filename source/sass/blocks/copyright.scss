@@ -1,13 +1,43 @@
 .copyright {
   display: flex;
-  justify-content: center;
-}
+  justify-content: space-between;
+  width: 130px;
+  margin: 0 auto;
 
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
 .copyright__text {
   @include font-normal;
+
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 5px;
+  }
 }
 
 .copyright__link-logohtmlacademy {
   width: 27px;
   height: 35px;
+  margin-top: 5px;
+
+  &:hover {
+    fill: #81b3d2;
+  }
+
+  &:active {
+    fill: #b3b3b3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: -5px;
+  }
 }

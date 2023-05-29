@@ -41,29 +41,38 @@
           height="96"
           alt="логотип седона"
       /></a>
-      <nav class="page-nav page-nav--opened">
+      <button class="page-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+        <svg class="page-header__burger">
+          <use xlink:href="./img/sprite.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <nav class="page-nav page-nav--closed">
         <div class="page-nav__wrapper">
           <button class="page-nav__menu-close" type="button">
             <span class="visually-hidden">Открыть меню</span>
-            <svg class="page-header__toggle">
-              <use xlink:href="./img/sprite.svg#icon-cross"></use>
-            </svg>
           </button>
           <div class="page-nav__menu-list">
             <ul class="page-nav__list menu-list">
               <li class="menu-list__item">
-                <a class="menu-list__link" href="#">Главная</a>
+                <a class="menu-list__link" href="./index.html">Главная</a>
               </li>
               <li class="menu-list__item">
-                <a class="menu-list__link" href="#">Фото и видео</a>
+                <a class="menu-list__link" href="./catalog.html"
+                  >Фото и видео</a
+                >
               </li>
             </ul>
             <ul class="page-nav__list menu-list">
-              <li class="menu-list__item">
-                <a class="menu-list__link" href="#">Форма Отзыва</a>
+              <li class="menu-list__item menu-list__item--active">
+                <a class="menu-list__link" href="./form.html">Форма Отзыва</a>
               </li>
               <li class="menu-list__item">
-                <a class="menu-list__link" href="#">HTML Academy</a>
+                <a
+                  class="menu-list__link"
+                  href="https://htmlacademy.ru/intensive/adaptive"
+                  >HTML Academy</a
+                >
               </li>
             </ul>
           </div>
@@ -79,24 +88,18 @@
         <picture class="page-form__image">
           <source
             media="(min-width: 1200px)"
-            srcset="img/canyon2-desktop.jpg, img/canyon2-desktop@2x.jpg" />
+            srcset="img/canyon2-desktop.jpg, img/canyon2-desktop@2x.jpg 2x" />
           <source
             media="(min-width: 768px)"
-            srcset="img/canyon2-tablet.jpg, img/canyon2-tablet@2x.jpg" />
+            srcset="img/canyon2-tablet.jpg, img/canyon2-tablet@2x.jpg 2x" />
           <img
             class="page-form__image"
             src="img/canyon2-mobile.jpg"
-            srcset="img/canyon2-mobile@2x.jpg"
+            srcset="img/canyon2-mobile@2x.jpg 2x"
             width="320"
             height="158"
             alt="фото каньон"
         /></picture>
-        <svg class="page-form__arrow-left">
-          <use xlink:href="./img/sprite.svg#arrow-left"></use>
-        </svg>
-        <svg class="page-form__arrow-right">
-          <use xlink:href="./img/sprite.svg#arrow-right"></use>
-        </svg>
       </section>
       <h2 class="page-form__title">Оставьте свой отзыв</h2>
       <p class="page-form__description">
@@ -107,100 +110,147 @@
         <div class="form__wrapper">
           <div class="form__user-date user-date">
             <h3 class="user-date__title">Представьтесь:</h3>
-            <label class="user-date__label"
-              >ИМЯ*:
-              <input
-                class="user-date__input"
-                type="text"
-                placeholder="Пётр"
-                required
-            /></label>
-            <label class="user-date__label"
-              >ФАМИЛИЯ*:
-              <input
-                class="user-date__input"
-                type="text"
-                placeholder="Пустота"
-                required
-            /></label>
-            <label class="user-date__label"
-              >Отчество:
-              <input
-                class="user-date__input"
-                type="text"
-                placeholder="Викторович"
-            /></label>
+            <label class="user-date__label" for="name">ИМЯ*: </label>
+            <input
+              class="user-date__input"
+              type="text"
+              placeholder="Пётр"
+              required
+              id="name"
+            />
+            <label class="user-date__label" for="last-name">ФАМИЛИЯ*: </label>
+            <input
+              class="user-date__input"
+              type="text"
+              placeholder="Пустота"
+              required
+              id="last-name"
+            />
+            <label class="user-date__label" for="surname">Отчество: </label>
+            <input
+              class="user-date__input"
+              type="text"
+              placeholder="Викторович"
+              id="surname"
+            />
           </div>
           <div class="form__contacts contacts">
             <h3 class="contacts__title">Контактная информация:</h3>
-            <label class="contacts__label"
+            <label class="contacts__label" for="tel"
               >Контактный телефон*:
-              <div class="contacts__input-container">
-                <input
-                  class="contacts__input"
-                  type="text"
-                  placeholder="Введите телефон"
-                  required
-                />
-                <svg class="contacts-phone">
-                  <use xlink:href="./img/sprite.svg#phone"></use>
-                </svg></div
-            ></label>
-            <label class="contacts__label"
+            </label>
+            <div class="contacts__input-container">
+              <input
+                class="contacts__input"
+                id="tel"
+                type="text"
+                placeholder="Введите телефон"
+                required
+              />
+              <svg class="contacts-phone">
+                <use xlink:href="./img/sprite.svg#phone"></use>
+              </svg>
+            </div>
+            <label class="contacts__label" for="mail"
               >Электронная почта*:
-              <div class="contacts__input-container">
-                <input
-                  class="contacts__input"
-                  type="text"
-                  placeholder="Введите e-mail"
-                  required
-                />
+            </label>
+            <div class="contacts__input-container">
+              <input
+                class="contacts__input"
+                id="mail"
+                type="text"
+                placeholder="Введите e-mail"
+                required
+              />
+              <div class="contacts-mail-wrapper">
                 <svg class="contacts-mail">
                   <use xlink:href="./img/sprite.svg#mail"></use>
-                </svg></div
-            ></label>
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
         <div class="form__rate rate">
           <h3 class="rate__title">Ваше общее впечатление:</h3>
           <div class="rate__label-wrapper">
-            <label class="rate__label"
-              ><input
+            <div class="rate__input-wrapper">
+              <input
                 class="rate__input"
                 type="radio"
                 name="rate"
                 checked="checked"
+                id="positive"
               />
-              Скорее положительное</label
-            >
-            <label class="rate__label"
-              ><input class="rate__input" type="radio" name="rate" /> Скорее
-              отрицательное</label
-            >
-            <label class="rate__label"
-              ><input class="rate__input" type="radio" name="rate" />
-              Затрудняюсь ответить</label
-            >
+              <label class="rate__label" for="positive"
+                >Скорее положительное</label
+              >
+            </div>
+            <div class="rate__input-wrapper">
+              <input
+                class="rate__input"
+                type="radio"
+                name="rate"
+                id="negative"
+              />
+              <label class="rate__label" for="negative">
+                Скорее отрицательное</label
+              >
+            </div>
+            <div class="rate__input-wrapper">
+              <input class="rate__input" type="radio" name="rate" id="middle" />
+              <label class="rate__label" for="middle">
+                Затрудняюсь ответить</label
+              >
+            </div>
           </div>
         </div>
         <div class="form__visit visit">
           <h3 class="visit__title">посещенные достопримечательности:</h3>
           <div class="visit__label-wrapper">
-            <label class="visit__label"
-              ><input class="visit__input" type="checkbox" /> Мост
-              Дьявола</label
-            >
-            <label class="visit__label"
-              ><input class="visit__input" type="checkbox" />
-              Гора-Колокол</label
-            >
-            <label class="visit__label"
-              ><input class="visit__input" type="checkbox" /> Слайд-парк</label
-            >
-            <label class="visit__label"
-              ><input class="visit__input" type="checkbox" /> Красные
-              скалы</label
-            >
+            <div class="visit__input-wrapper">
+              <label class="visit__label" for="bridge">
+                <input class="visit__input" type="checkbox" id="bridge" />
+                <span class="visit__mark">
+                  <svg class="visit__check">
+                    <use xlink:href="./img/sprite.svg#check"></use>
+                  </svg>
+                </span>
+                <span class="visit__label-check">Мост Дьявола</span>
+              </label>
+            </div>
+            <div class="visit__input-wrapper">
+              <label class="visit__label" for="montain">
+                <input class="visit__input" type="checkbox" id="montain" />
+                <span class="visit__mark">
+                  <svg class="visit__check">
+                    <use xlink:href="./img/sprite.svg#check"></use>
+                  </svg>
+                </span>
+                <span class="visit__label-check">Гора-Колокол</span>
+              </label>
+            </div>
+            <div class="visit__input-wrapper">
+              <label class="visit__label" for="park">
+                <input class="visit__input" type="checkbox" id="park" />
+                <span class="visit__mark">
+                  <svg class="visit__check">
+                    <use xlink:href="./img/sprite.svg#check"></use>
+                  </svg>
+                </span>
+                <span class="visit__label-check">Слайд-парк</span>
+              </label>
+            </div>
+            <div class="visit__input-wrapper">
+              <label class="visit__label" for="rocks">
+                <input class="visit__input" type="checkbox" id="rocks" />
+                <span class="visit__mark">
+                  <svg class="visit__check">
+                    <use xlink:href="./img/sprite.svg#check"></use>
+                  </svg>
+                </span>
+                <span class="visit__label-check">Красные скалы</span>
+              </label>
+            </div>
           </div>
         </div>
         <div class="form__textarea textarea">
@@ -209,17 +259,15 @@
             class="textarea__text"
             placeholder="Опишите подробно все свои восторги "
             id="#"
-            cols="30"
-            rows="10"
           ></textarea>
           <div class="form__texterea-wrapper">
             <button class="form__button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
-            <p class="form__legend"><small>* — обязательные поля</small></p>
+            <p class="form__legend"><small>*</small> — обязательные поля</p>
           </div>
         </div>
       </form>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--form">
       <div class="page-footer__wrapper">
         <div class="page-footer__visit">
           <p class="page-footer__hashtag">#visitsedona</p>
@@ -231,26 +279,28 @@
               <a
                 class="social__link social__link--vkontakte"
                 href="https://vk.com/htmlacademy"
-                ><img src="./img/vk.png" width="24" height="24" alt="Вконтакте"
-              /></a>
+                ><svg class="social__link--vk">
+                  <use xlink:href="./img/sprite.svg#vk"></use>
+                </svg>
+              </a>
             </li>
             <li class="social__item">
               <a
                 class="social__link social__link--telegram"
                 href="https://t.me/htmlacademy"
-                ><img
-                  src="./img/telegram.png"
-                  width="24"
-                  height="24"
-                  alt="Телеграм"
-              /></a>
+                ><svg class="social__link--telegram">
+                  <use xlink:href="./img/sprite.svg#telegram"></use>
+                </svg>
+              </a>
             </li>
             <li class="social__item">
               <a
                 class="social__link social__link--youtube"
                 href="https://www.youtube.com/user/htmlacademyru"
-                ><img src="./img/youtube.png" width="24" height="24" alt="Ютуб"
-              /></a>
+                ><svg class="social__link--youtube">
+                  <use xlink:href="./img/sprite.svg#youtube"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -266,5 +316,29 @@
         </div>
       </div>
     </footer>
+    <div class="modal-failure modal-success--open">
+      <div class="modal-failure-wrapper">
+        <h3 class="modal-failure__title">что-то пошло не так!</h3>
+        <p class="modal-failure__description">
+          Проверьте поля, выделенные красным, скорее всего вы забыли их
+          заполнить
+        </p>
+        <button class="modal-failure__ok" type="button">ок</button>
+      </div>
+    </div>
+    <div class="modal-success modal-success--close">
+      <div class="modal-success-wrapper">
+        <h3 class="modal-success__title">Ваш отзыв отправлен!</h3>
+        <p class="modal-success__description">
+          Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее
+          время мы опубликуем его на сайте.
+        </p>
+        <div class="modal-success__button">
+          <button class="modal-success__close" type="button">
+            закрыть окно
+          </button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

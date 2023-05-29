@@ -2,7 +2,7 @@
   position: absolute;
   width: 230px;
   height: 40px;
-  top: 30%;
+  top: 44%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -10,58 +10,113 @@
     width: 460px;
     height: 78px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 47%;
+  }
+}
+
+.catalog-content__photo {
+  margin-top: 33px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 96px;
+  }
+}
+
+.catalog-content__image {
+  max-height: 158px;
+  @media (min-width: $tablet-width) {
+    max-height: 298px;
+  }
 }
 
 .catalog-content__cover {
   position: relative;
-}
+  min-height: 160px;
 
-.catalog-content__arrow-left {
-  position: absolute;
-  top: 148px;
-  left: -129px;
-  @media (min-width: $tablet-width) {
-    width: 600px;
-    height: 57px;
-    top: 290px;
-    left: -210px;
-  }
-  @media (min-width: $desktop-width) {
-    top: 301px;
-    left: 0;
-  }
-}
+  clip-path: polygon(0 0, 107% 0, 100% 81%, 50% 98%, 0 81%);
 
-.catalog-content__arrow-right {
-  position: absolute;
-  top: 148px;
-  right: -125px;
   @media (min-width: $tablet-width) {
-    width: 600px;
-    height: 57px;
-    top: 290px;
-    right: -210px;
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% 84%,
+      96% 84%,
+      96% 76%,
+      50% 96%,
+      4% 77%,
+      4% 84%,
+      0% 83%
+    );
   }
+
   @media (min-width: $desktop-width) {
-    top: 301px;
-    right: 0;
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% 81%,
+      79% 88%,
+      79% 81%,
+      50% 99%,
+      21% 81%,
+      21% 88%,
+      0% 81%
+    );
   }
 }
 
 .catalog-content__name {
   @include font-bold;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    margin-top: 53px;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 61px;
+  }
 }
 
 .catalog-content__description {
   @include font-normal;
+  max-width: 276px;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 444px;
+    margin: 0 auto;
+    margin-bottom: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+  }
 }
 
 .catalog-content__list {
   @include list-reset;
+  margin-top: 40px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 90px;
+  }
 }
 
 .catalog-content__video-wrapper {
   position: relative;
+}
+
+.video {
+  margin-top: 6px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 800px;
+    margin-left: 200px;
+  }
 }
 
 .play {

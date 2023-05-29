@@ -1,13 +1,20 @@
 .textarea__title {
   @include font-bold;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-top: 12px;
+    margin-bottom: 28px;
+  }
 }
 
 .textarea__text {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
   background: #f2f2f2;
   border: none;
+  width: 100%;
+  min-height: 152px;
+  padding-top: 18px;
+  padding-left: 15px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -21,4 +28,10 @@
     width: 768px;
     height: 160px;
   }
+}
+
+.textarea__text::placeholder {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
 }

@@ -4,23 +4,129 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 43px;
   }
 }
 
 .advantages__item-wrapper {
   background: #81b3d2;
   color: #ffffff;
-  min-height: 256px;
+  min-height: 190px;
 }
 
-.advantages__slogan,
+.advantages__item-wrapper--arrows {
+  min-height: 210px;
+  clip-path: polygon(0 0, 50% 9%, 100% 0%, 100% 100%, 0% 100%);
+
+  @media (min-width: $tablet-width) {
+    clip-path: none;
+    height: 100%;
+  }
+}
+
+.advantages__item-wrapper--bridge {
+  order: 1;
+  @media (min-width: $tablet-width) {
+    order: 2;
+    height: 100%;
+  }
+}
+
+.advantages__slogan {
+  @include font-bold;
+  max-width: 266px;
+  margin: 0 auto;
+  margin-top: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 51px;
+    max-width: 437px;
+    font-size: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 62px;
+  }
+}
+
+.advantages-compare {
+  @include font-normal;
+  max-width: 280px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 38px;
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 485px;
+    margin-top: 30px;
+  }
+}
+
 .advantages__title {
   @include font-bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 150px;
+    margin: 0 auto;
+    font-size: 21px;
+    margin-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 53px;
+  }
+}
+
+.advantages__title--city {
+  margin-top: 55px;
+}
+
+.advantages__title--bridge {
+  margin-top: 40px;
+  @media (min-width: $tablet-width) {
+    margin-top: 51px;
+  }
 }
 
 .advantages__number,
 .advantages__description {
   @include font-normal;
+}
+
+.advantages__description {
+  max-width: 280px;
+  margin: 0 auto;
+  margin-top: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 22px;
+    max-width: 195px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 290px;
+  }
+}
+
+.advantages__description--bridge {
+  @media (min-width: $desktop-width) {
+    max-width: 226px;
+  }
+}
+
+.advantages__description--vegas {
+  max-width: 204px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 268px;
+  }
 }
 
 .advantages__item-city {
@@ -49,12 +155,20 @@
 .advantages__item-bridge {
   display: grid;
 
+  .advantages__bridge-img {
+    order: 2;
+    @media (min-width: $tablet-width) {
+      order: 2;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     grid-column: span 3;
 
     .advantages__bridge-img {
+      order: 1;
       grid-column: span 2;
       max-height: 256px;
     }
@@ -65,4 +179,44 @@
 .advantages__item-road,
 .advantages__item-tourists {
   background: #eeeeee;
+  padding-bottom: 30px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 53px;
+  }
+}
+
+.advantages__item-territory::after {
+  content: "";
+  position: absolute;
+  background-color: #d6d6d6;
+  width: 284px;
+  height: 1px;
+  bottom: 0;
+  left: 20px;
+  @media (min-width: $tablet-width) {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+  }
+}
+
+.advantages__item-road::after {
+  content: "";
+  position: absolute;
+  background-color: #d6d6d6;
+  width: 284px;
+  height: 1px;
+  bottom: 0;
+  left: 20px;
+  @media (min-width: $tablet-width) {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+  }
 }

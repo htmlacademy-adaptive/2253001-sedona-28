@@ -10,6 +10,31 @@
   }
 }
 
+.photo-list__item {
+  padding-top: 22px;
+  padding-bottom: 24px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.photo-list__item::after {
+  content: "";
+  position: absolute;
+  background-color: #d6d6d6;
+  width: 320px;
+  height: 1px;
+  bottom: 0;
+  left: -20px;
+  @media (min-width: $tablet-width) {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+  }
+}
+
 .photo-list__item--large {
   @media (min-width: $tablet-width) {
     grid-column: span 2;
@@ -20,31 +45,109 @@
   }
 }
 
+.photo-list__text {
+  @media (min-width: $tablet-width) {
+    margin-left: 20px;
+  }
+}
+
 .photo-list__description {
   @media (min-width: $tablet-width) {
     background: #eaeaea;
     display: flex;
     justify-content: space-between;
+    margin-top: -5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -86px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.1);
   }
 }
 
 .photo-list__title {
+  margin-top: 10px;
+  margin-bottom: 1px;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: #fff;
+  }
+}
+
+.photo-list__like-icon {
+  margin-top: -5px;
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 26px;
+    margin-right: 20px;
+  }
 }
 
 .photo-list__author {
+  margin-top: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  opacity: 0.7;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: #fff;
+  }
 }
 
 .photo-list__like {
   border: none;
   width: 23px;
   height: 21px;
+  background: none;
+  padding: 0;
+  margin-right: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    padding-top: 5px;
+  }
+}
+
+.photo-list__like-img {
+  width: 23px;
+  height: 21px;
+
+  @media (min-width: $desktop-width) {
+    width: 0;
+    height: 0;
+  }
+}
+
+.photo-list__like-img--white {
+  width: 0;
+  height: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 23px;
+    height: 21px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 .photo-list__like-counter {
@@ -52,4 +155,8 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    color: #fff;
+  }
 }

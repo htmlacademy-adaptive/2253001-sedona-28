@@ -1,0 +1,86 @@
+.modal-failure {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+.modal-failure--close {
+  display: none;
+}
+
+.modal-failure-wrapper {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+  height: 280px;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+    height: 347px;
+  }
+}
+
+.modal-failure__title {
+  font-style: bold;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 45px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+}
+
+.modal-failure__description {
+  @include font-normal;
+  opacity: 0.6;
+  text-align: center;
+  width: 220px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 280px;
+    margin: 0 auto;
+    margin-top: 35px;
+  }
+}
+
+.modal-failure__ok {
+  @include font-bold;
+  width: 180px;
+  height: 58px;
+  background-color: #81b3d2;
+  color: #ffffff;
+  margin: 35px 70px;
+  border: none;
+
+  &:hover {
+    background: #669ec0;
+  }
+
+  &:active {
+    background: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background: #e5e5e5;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 272px;
+  }
+}
